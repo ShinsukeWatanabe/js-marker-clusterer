@@ -1070,6 +1070,7 @@ ClusterIcon.prototype.onAdd = function() {
     this.div_.style.cssText = this.createCss(pos);
     this.div_.innerHTML = this.sums_.text;
   }
+  this.div_.className += ' googlemaps-clusterer';
 
   var panes = this.getPanes();
   panes.overlayMouseTarget.appendChild(this.div_);
